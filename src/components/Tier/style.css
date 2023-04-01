@@ -1,0 +1,135 @@
+.Tier-border{
+    border: 2px solid #8B8887;
+    width: 25%;
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+
+}
+.Tier-cont p{
+    font-family: TacticSans-Reg;
+    color: white;
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+}
+.Tier-cont h5{
+    line-height: 0;
+    color: white;
+    font-family: TacticSansExd-Med;
+    font-size: 16px;
+    padding-bottom: 2rem;
+}
+.Tier-flex{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 3rem;
+    justify-content: space-around;
+
+}
+.Tier-border-flex{
+    line-height: 0;
+    
+    margin: -1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.Tier-border-flex p{
+    font-family: TacticSansExd-Med;
+    font-size: 13px;
+    
+   color: white;
+   line-height: 0;
+}
+.Tier-border-flex h5{
+    font-family: TacticSansExd-Med;
+    font-size: 15px;
+    color: white;
+   line-height: 0;
+
+}
+.Tier-btn1{
+    display: flex;
+    justify-content: space-between;
+   padding-top: 10px;
+}
+.Token-btn{
+    background-color: white;
+    border: none;
+    font-family: TacticSansExtExd-Bld;
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 5px;
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+.NFT-btn{
+    background-color: white;
+    border: none;
+    font-family: TacticSansExtExd-Bld;
+    font-weight: 500;
+    cursor: pointer;
+    width: 50%;
+    font-size: 15px;
+    margin-left: 5px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1100;
+    /* overflow-y: hidden; */
+}
+.modal-contents{
+   transform: translate(-50%,-50%);
+   position: absolute;
+    top: 40%;
+    left: 41%;
+    z-index: 1200;
+    /* overflow-y: hidden; */
+}
+.overlay{
+    
+    background: #121223cc;
+    overflow-y: hidden;
+    /* z-index: -1000; */
+}
+@media screen  and (max-width:768px){
+    .Tier-flex{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem 1.5rem;
+        justify-content: space-around;
+    
+    }
+    .Tier-border{
+        border: 2px solid #9C9C9C;
+        width: 100%;
+        margin: 10px 0;
+        padding: 1.5rem 1rem;
+        border-radius: 5px;
+    
+    }
+    .modal-contents{
+        transform: translate(-50%,-50%);
+        position: absolute;
+         top: 40%;
+         left: 30%;
+         /* padding: 0 2rem; */
+         z-index: 1200;
+         /* overflow-y: hidden; */
+     }
+
+}

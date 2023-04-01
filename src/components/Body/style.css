@@ -1,0 +1,22 @@
+.h1-content{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    /* width: 50%; */
+    font-family: TacticSansExd-Med;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 5rem 10rem;
+}
+@media screen  and (max-width:768px){
+    .h1-content{
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        font-family: TacticSansExd-Med;
+        font-weight: 400;
+        letter-spacing: 1px;
+        padding: 2rem 0;
+    }
+
+}

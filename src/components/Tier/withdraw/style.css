@@ -1,0 +1,139 @@
+.Withdraw{
+    border: 2px solid #8B8887;
+    width: 200%;
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+    background-color: #160D21;
+}
+
+.Withdraw-felx{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px 0; */
+}
+.Withdraw-felx img {
+    cursor: pointer;
+}
+.Withdraw-felx1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.Withdraw-felx p {
+    font-family: TacticSansExd-Med;
+    font-size: 13px;
+    color: white;
+
+}
+.Withdraw-felx1 h7 {
+    font-family: TacticSans-Reg;
+    font-size: 15px;
+    
+    color: white;
+
+}
+.Continue{
+    background-color: white;
+    border: none;
+    font-family: TacticSansExtExd-Bld;
+    font-weight: 500;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 10px;
+    /* margin-left: 5px; */
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+#custom-check + label::before{
+    content: '';
+      position: absolute;
+      border: 2px solid #8B8887;
+      width: 13px;
+      height: 13px;
+      top: 5px;
+      margin: 0 10px;
+      left: 0;
+      border-radius: 3px;
+      transition: 0.2s
+  }
+  #custom-check:checked + label::before{
+    border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-right: 2px solid #8EFF72;
+      border-bottom: 2px solid #8EFF72;
+      transform: rotate(40deg);
+      width: 9px;
+      height: 15px;
+      transform-origin: 100% 100%;
+      top: 0px;
+      left: -5px
+  }
+  #custom-check:not(:checked),
+  #custom-check:checked{
+    display: none
+  }
+  label[for='custom-check']{
+    cursor: pointer;
+    padding-left: 33px;
+    font-size: 15px;
+    /* width: 250px; */
+    display: block;
+    position: relative;
+  }
+
+
+
+  #custom + label::before{
+    content: '';
+      position: absolute;
+      border: 2px solid #8B8887;
+      width: 13px;
+      height: 13px;
+      top: 5px;
+      margin: 0 10px;
+      left: 0;
+      border-radius: 3px;
+      transition: 0.2s
+  }
+  #custom:checked + label::before{
+    border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-right: 2px solid #8EFF72;
+      border-bottom: 2px solid #8EFF72;
+      transform: rotate(40deg);
+      width: 9px;
+      height: 15px;
+      transform-origin: 100% 100%;
+      top: 0px;
+      left: -5px
+  }
+  #custom:not(:checked),
+  #custom:checked{
+    display: none
+  }
+  label[for='custom']{
+    cursor: pointer;
+    padding-left: 33px;
+    font-size: 15px;
+    /* width: 250px; */
+    display: block;
+    position: relative;
+  }
+
+
+
+  @media screen  and (max-width:768px){
+    .Withdraw{
+        border: 2px solid #8B8887;
+        width: 120%;
+        padding: 1.5rem 1rem;
+        border-radius: 5px;
+        background-color: #160D21;
+        margin: 0 2rem;
+    }
+
+  }
