@@ -99,11 +99,11 @@ const Tier = () => {
             </div>
             <div className='Tier-btn1'>
                 <button className='Token-btn'>Token</button>
-                <button className='NFT-btn'>NFT</button>
+                <button className='NFT-btn'>Claim</button>
             </div>
             <div className='Tier-btn1'>
-                <button className='Token-btn' onClick={toggleModal}>Withdraw</button>
-                <button className='NFT-btn'>Claim</button>
+                <button className='Withdraw-btn' onClick={toggleModal}>Withdraw</button>
+                {/* <button className='NFT-btn'>Claim</button> */}
             </div>
             </div>
         </div>
