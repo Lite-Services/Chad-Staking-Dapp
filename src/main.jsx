@@ -13,7 +13,7 @@ import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 
 const { chains, provider } = configureChains(
-  [mainnet, goerli],
+  [mainnet],
   [
    // alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
     publicProvider()
