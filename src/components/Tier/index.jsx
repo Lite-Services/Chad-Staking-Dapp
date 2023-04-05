@@ -11,9 +11,9 @@ import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
 const Tier = () => {
-    const tier1ContractAddress = '0x6F4d6024eacd646b4253eAC733f105FC0fCb64E8';
-    const tier2contractAddress = "0xb919929cE880d706A70F9367F568C9e7f8adB93E";
-    const tier3ContractAddress = '0xE255173906F87c0831f098E84F537a37E5d555b2';
+    const tier1ContractAddress = '0x9C158100757ceAAa618Acca924C57655a999803f';
+    const tier2contractAddress = "0xc6bfD126b5994B40185342555Dad5634279DD379";
+    const tier3ContractAddress = '0xdf5204e230cb7e599d8347ceb0edbc167dddfe15';
     const [rewardsInfo, setRewardsInfo] = useState({
         tier1Reward: "-",
         tier2Reward: "-",
@@ -146,7 +146,7 @@ const Tier = () => {
         const provider = new ethers.providers.Web3Provider(window.ethereum, 'any');
         await provider.send("eth_requestAccounts", []);
         const signer = await provider.getSigner();
-        const tokenContract = new ethers.Contract('0xEA22237225f7A2D16b1062A6255e31f5Ae3a5708', tokenAbi, signer);
+        const tokenContract = new ethers.Contract('0x3FcBfbC9fe4f930767754E674b4991B6825F54E6', tokenAbi, signer);
         const amount = document.getElementById('amount1').value;
         const parsedAmount= Web3.utils.toWei(amount, 'ether')
         //alert(parsedAmount)
@@ -178,7 +178,7 @@ const Tier = () => {
         const provider = new ethers.providers.Web3Provider(window.ethereum, 'any');
         await provider.send("eth_requestAccounts", []);
         const signer = await provider.getSigner();
-        const tokenContract = new ethers.Contract('0xEA22237225f7A2D16b1062A6255e31f5Ae3a5708', tokenAbi, signer);
+        const tokenContract = new ethers.Contract('0x3FcBfbC9fe4f930767754E674b4991B6825F54E6', tokenAbi, signer);
         const amount = document.getElementById('amount2').value;
         const parsedAmount= Web3.utils.toWei(amount, 'ether')
         //alert(parsedAmount)
